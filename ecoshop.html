@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Commerce Website</title>
+    <link rel="stylesheet" href="ecoshop.css">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <h1>Tech Solutions Store</h1>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Products</a></li>
+                    <li><a href="#">Cart</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="banner">
+        <div class="container">
+            <h2>Welcome to the Tech Solutions Store</h2>
+            <p>Your one-stop shop for tech products and media services.</p>
+        </div>
+    </section>
+
+    <section class="products">
+        <div class="container">
+            <h2>Our Products</h2>
+            <div class="product-grid">
+                <div class="product">
+                    <img src="RoboLab.jpg" alt="Product 1">
+                    <h3>Product 1</h3>
+                    <p>$100.00</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="PCB.jpg" alt="Product 2">
+                    <h3>Product 2</h3>
+                    <p>$150.00</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="RoboLab.jpg" alt="Product 1">
+                    <h3>Product 1</h3>
+                    <p>$100.00</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="PCB.jpg" alt="Product 2">
+                    <h3>Product 2</h3>
+                    <p>$150.00</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="RoboLab.jpg" alt="Product 1">
+                    <h3>Product 1</h3>
+                    <p>$100.00</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="PCB.jpg" alt="Product 2">
+                    <h3>Product 2</h3>
+                    <p>$150.00</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="RoboLab.jpg" alt="Product 1">
+                    <h3>Product 1</h3>
+                    <p>$100.00</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="PCB.jpg" alt="Product 2">
+                    <h3>Product 2</h3>
+                    <p>$150.00</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="RoboLab.jpg" alt="Product 1">
+                    <h3>Product 1</h3>
+                    <p>$100.00</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="PCB.jpg" alt="Product 2">
+                    <h3>Product 2</h3>
+                    <p>$150.00</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="RoboLab.jpg" alt="Product 1">
+                    <h3>Product 1</h3>
+                    <p>$100.00</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="PCB.jpg" alt="Product 2">
+                    <h3>Product 2</h3>
+                    <p>$150.00</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <!-- More products here -->
+            </div>
+        </div>
+    </section>
+
+        <!-- Cart Modal -->
+        <div id="cartModal" class="modal">
+            <div class="modal-content">
+                <span class="close-btn">&times;</span>
+                <h2>Your Cart</h2>
+                <div id="cartItems"></div>
+                <button class="checkout-btn">Checkout</button>
+            </div>
+        </div>
+        <!-- Cart Modal HTML -->
+<div id="cartModal" class="modal">
+    <div class="modal-content">
+        <span class="close-button" onclick="closeCartModal()">×</span>
+        <h2>Your Cart</h2>
+        <div class="cart-items">
+            <!-- Cart items will be dynamically loaded here -->
+        </div>
+        <div class="cart-total">
+            <span>Total:</span>
+            <span id="cartTotal">$250.00</span>
+        </div>
+        <button class="checkout-btn" onclick="goToCheckout()">Checkout</button>
+    </div>
+</div>
+
+
+    <section class="footer">
+        <div class="container">
+            <p>&copy; 2024 Tech Solutions Store. All rights reserved.</p>
+        </div>
+    </section>
+
+    <script src="ecoshop.js"></script>
+</body>
+
+</html>
